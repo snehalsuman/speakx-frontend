@@ -32,7 +32,7 @@ const SearchWithPagination = () => {
   const fetchQuestions = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://quest-search-backend.onrender.com/api/questions", {
+      const response = await axios.get("https://speakx-backend-udtv.onrender.com/api/questions", {
         params: { page, limit, search },
       });
       setQuestions(response.data.questions || []);
